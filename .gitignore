@@ -1,0 +1,11 @@
+# Claude Code settings — never commit
+.claude/
+.claude.json
+CLAUDE.local.md
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env

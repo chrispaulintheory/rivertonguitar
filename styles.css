@@ -232,3 +232,174 @@ a:hover { text-decoration: underline; }
   font-size: 0.8rem;
   color: rgba(250, 246, 240, 0.55);
 }
+
+/* btn-outline-light (used on dark/accent backgrounds) */
+.btn-outline-light {
+  background: transparent;
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-outline-light:hover {
+  background: #fff;
+  color: var(--ink);
+}
+
+/* section labels + subtitles */
+.section-label {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.section-sub {
+  font-size: 1.1rem;
+  color: #6B6258;
+  max-width: 54ch;
+}
+
+.section-header { margin-bottom: 2.5rem; }
+
+.section-header-center { text-align: center; }
+
+.section-header-center .section-sub { margin-inline: auto; }
+
+/* proof strip */
+.proof-strip {
+  background: #2B2B2B;
+  padding: 4rem 0;
+  color: var(--cream);
+  text-align: center;
+}
+
+.proof-strip .section-label { color: rgba(250, 246, 240, 0.8); }
+
+.proof-strip h2 {
+  color: var(--cream);
+  margin-bottom: 1rem;
+}
+
+.proof-sub {
+  color: rgba(250, 246, 240, 0.7);
+  font-size: 1.1rem;
+  max-width: 52ch;
+  margin: 0 auto 2rem;
+}
+
+/* benefits */
+.section-benefits { padding: 5rem 0; }
+
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.card:hover {
+  box-shadow: 0 4px 16px rgba(43, 43, 43, 0.1);
+}
+
+.card-icon {
+  font-size: 2rem;
+  line-height: 1;
+  margin-bottom: 1rem;
+}
+
+.card h3 { font-size: 1.2rem; margin-bottom: 0.6rem; }
+
+.card p { font-size: 0.95rem; color: #6B6258; }
+
+/* how it works */
+.section-how {
+  background: #F0E8DC;
+  padding: 4.5rem 0;
+}
+
+.steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.step { display: flex; flex-direction: column; gap: 0.75rem; }
+
+.step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background: var(--accent);
+  color: #fff;
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border-radius: 50%;
+}
+
+.step h3 { font-size: 1.15rem; }
+
+.step p { font-size: 0.95rem; color: #6B6258; }
+
+.method-teaser {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--accent);
+  border-radius: 12px;
+  padding: 2rem 2.5rem;
+  max-width: 680px;
+}
+
+.method-teaser-eye {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+}
+
+.method-teaser-text {
+  color: var(--ink);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.method-teaser-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.method-teaser-link:hover { color: var(--accent-dark); }
+
+/* CTA band */
+.cta-band {
+  background: var(--accent);
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.cta-band h2 {
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.cta-band p {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.1rem;
+  max-width: 52ch;
+  margin: 0 auto 2rem;
+}

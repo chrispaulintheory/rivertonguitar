@@ -602,6 +602,102 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
 }
 
+/* pricing card */
+.section-price-card {
+  padding: 3.5rem 0 4rem;
+  text-align: center;
+}
+
+.price-card {
+  background: #fff;
+  border: 2px solid var(--accent);
+  border-radius: 12px;
+  padding: 3rem 2.5rem;
+  max-width: 440px;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px rgba(43, 43, 43, 0.1);
+}
+
+.price-card-price {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: var(--accent);
+  line-height: 1;
+  margin-bottom: 0.25rem;
+}
+
+.price-card-price sup {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.price-card-period {
+  font-size: 1.05rem;
+  color: #6B6258;
+  margin-bottom: 1.75rem;
+}
+
+.price-card-features {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+.price-card-features li {
+  padding: 0.65rem 0 0.65rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.95rem;
+  position: relative;
+}
+
+.price-card-features li:last-child { border-bottom: none; }
+
+.price-card-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.price-card-note {
+  font-size: 0.85rem;
+  color: #6B6258;
+  margin-top: 1rem;
+}
+
+/* pricing mini-FAQ (static — no JS) */
+.section-pricing-faq {
+  background: #F0E8DC;
+  padding: 4rem 0;
+}
+
+.pricing-faq-heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.pricing-questions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem 3rem;
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.pricing-questions h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 0.5rem;
+}
+
+.pricing-questions p {
+  font-size: 0.95rem;
+  color: #6B6258;
+  line-height: 1.7;
+}
+
 /* FAQ accordion */
 .section-faq {
   background: #F0E8DC;

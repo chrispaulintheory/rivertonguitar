@@ -602,6 +602,65 @@ a:hover { text-decoration: underline; }
   font-weight: 700;
 }
 
+/* FAQ accordion */
+.section-faq {
+  background: #F0E8DC;
+  padding: 4.5rem 0;
+}
+
+.faq-list {
+  max-width: 760px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.faq-item {
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.faq-trigger {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.1rem 1.5rem;
+  text-align: left;
+  font-family: system-ui, sans-serif;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--ink);
+  background: #fff;
+  border: none;
+  cursor: pointer;
+  gap: 1rem;
+}
+
+.faq-trigger:hover { background: var(--cream); }
+
+.faq-icon {
+  flex-shrink: 0;
+  font-size: 1.3rem;
+  color: var(--accent);
+  line-height: 1;
+}
+
+.faq-icon::before { content: '+'; }
+
+.faq-trigger[aria-expanded="true"] .faq-icon::before { content: '−'; }
+
+.faq-panel {
+  padding: 0 1.5rem 1.25rem;
+  background: #fff;
+  color: #6B6258;
+  line-height: 1.7;
+}
+
+.faq-panel.is-closed { display: none; }
+
 /* mobile reflow */
 @media (max-width: 899px) {
   .hero { padding: 3rem 0; }

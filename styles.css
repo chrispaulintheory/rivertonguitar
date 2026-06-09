@@ -469,6 +469,139 @@ a:hover { text-decoration: underline; }
   .mobile-nav { display: none !important; }
 }
 
+/* page hero (interior pages) */
+.page-hero {
+  background: #F0E8DC;
+  padding: 4rem 0 3.5rem;
+}
+
+.page-hero h1 {
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 700;
+  max-width: 22ch;
+  margin: 0.75rem 0 1rem;
+}
+
+.page-hero-sub {
+  font-size: 1.1rem;
+  color: #6B6258;
+  max-width: 54ch;
+}
+
+/* outlining method */
+.section-method { padding: 5rem 0; }
+
+.method-intro {
+  max-width: 68ch;
+  margin-bottom: 2.5rem;
+}
+
+.method-intro p {
+  font-size: 1.05rem;
+  color: #6B6258;
+  line-height: 1.7;
+}
+
+.method-intro p + p { margin-top: 1rem; }
+
+.method-compare {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.method-col {
+  background: #F0E8DC;
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.method-col h3 {
+  font-size: 1.05rem;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--accent);
+}
+
+.method-col ol {
+  list-style: decimal;
+  padding-left: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.method-col li {
+  font-size: 0.95rem;
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+/* what we teach */
+.section-what-we-teach {
+  background: #F0E8DC;
+  padding: 4.5rem 0;
+}
+
+/* skill levels */
+.section-levels { padding: 5rem 0; }
+
+.level-card {
+  background: #fff;
+  border: 1px solid var(--border);
+  border-top: 4px solid var(--accent);
+  border-radius: 10px;
+  padding: 2rem;
+}
+
+.level-card .badge {
+  display: inline-block;
+  padding: 0.2rem 0.6rem;
+  background: #F0E8DC;
+  color: var(--accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-bottom: 1rem;
+}
+
+.level-card h3 {
+  font-size: 1.15rem;
+  margin-bottom: 0.6rem;
+}
+
+.level-card > p {
+  font-size: 0.95rem;
+  color: #6B6258;
+  line-height: 1.65;
+  margin-bottom: 1.25rem;
+}
+
+.level-card ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.level-card li {
+  font-size: 0.9rem;
+  color: var(--ink);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.level-card li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
 /* mobile reflow */
 @media (max-width: 899px) {
   .hero { padding: 3rem 0; }
@@ -485,5 +618,9 @@ a:hover { text-decoration: underline; }
   .footer-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
+  }
+
+  .method-compare {
+    grid-template-columns: 1fr;
   }
 }

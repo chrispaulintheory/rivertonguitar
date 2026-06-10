@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Free Intro Lesson | Riverton Guitar Studio</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          Riverton Guitar Studio
+          <span>Beginner lessons · Riverton</span>
+        </a>
+        <nav class="primary-nav">
+          <a href="index.html">Home</a>
+          <a href="lessons.html">Lessons</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="stories.html">Stories</a>
+          <a href="contact.html" class="btn btn-primary">Book a Free Intro Lesson</a>
+        </nav>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" type="button">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="lessons.html">Lessons</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="stories.html">Stories</a>
+      <a href="contact.html">Contact</a>
+      <a href="contact.html" class="btn btn-primary">Book a Free Intro Lesson</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <span class="section-label">Contact</span>
+        <h1>Book a free intro lesson.</h1>
+        <p class="page-hero-sub">
+          Fill out the form and we'll call you within one business day to set it up.
+          No commitment, no payment until you're sure it's the right fit.
+        </p>
+      </div>
+    </section>
+
+    <section class="section-contact">
+      <div class="container">
+        <div class="contact-layout">
+
+          <div>
+            <h2>Get in touch</h2>
+            <!-- Formspree: replace YOUR_FORM_ID in the action URL -->
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+
+              <div class="form-group">
+                <label class="form-label" for="parent-name">Parent name</label>
+                <input class="form-input" type="text" id="parent-name" name="parent_name" required autocomplete="name">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="phone">Phone number</label>
+                <input class="form-input" type="tel" id="phone" name="phone" required autocomplete="tel">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="email">Email address</label>
+                <input class="form-input" type="email" id="email" name="email" required autocomplete="email">
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="student-age">Student age</label>
+                <select class="form-select" id="student-age" name="student_age" required>
+                  <option value="" disabled selected>Select age range…</option>
+                  <option value="under-6">Under 6</option>
+                  <option value="6-8">6 – 8</option>
+                  <option value="9-11">9 – 11</option>
+                  <option value="12-14">12 – 14</option>
+                  <option value="15-17">15 – 17</option>
+                  <option value="18+">18+ (Adult)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="call-time">Best time to call (optional)</label>
+                <select class="form-select" id="call-time" name="best_time_to_call">
+                  <option value="" disabled selected>Select a time…</option>
+                  <option value="morning">Morning (9 am – 12 pm)</option>
+                  <option value="afternoon">Afternoon (12 pm – 5 pm)</option>
+                  <option value="evening">Evening (5 pm – 8 pm)</option>
+                  <option value="anytime">Anytime</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <label class="form-label" for="referral-source">How did you hear about us? (optional)</label>
+                <select class="form-select" id="referral-source" name="referral_source">
+                  <option value="" disabled selected>Select an option…</option>
+                  <option value="google">Google search</option>
+                  <option value="referral">Friend or family referral</option>
+                  <option value="social">Social media</option>
+                  <option value="nextdoor">Nextdoor</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+
+              <button class="btn btn-primary btn-lg" type="submit">Send my request</button>
+
+            </form>
+          </div>
+
+          <aside class="contact-info">
+            <h2>Prefer to reach out directly?</h2>
+            <ul class="contact-details">
+              <li>
+                <span>📞</span>
+                <div>
+                  <strong>Phone</strong>
+                  <a href="tel:+15551234567">(555) 123-4567</a>
+                </div>
+              </li>
+              <li>
+                <span>✉️</span>
+                <div>
+                  <strong>Email</strong>
+                  <a href="mailto:hello@rivertonguitar.com">hello@rivertonguitar.com</a>
+                </div>
+              </li>
+              <li>
+                <span>📍</span>
+                <div>
+                  <strong>Location</strong>
+                  Riverton (exact address provided on booking)
+                </div>
+              </li>
+              <li>
+                <span>🕐</span>
+                <div>
+                  <strong>Lesson hours</strong>
+                  Mon – Fri: 3 pm – 8 pm<br>
+                  Saturday: 10 am – 4 pm<br>
+                  Sunday: closed
+                </div>
+              </li>
+            </ul>
+            <p class="contact-response">
+              <strong>We respond within 1 business day.</strong>
+              If you haven't heard back, check your spam folder or call us directly.
+            </p>
+          </aside>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <p class="footer-name">Riverton Guitar Studio</p>
+          <p class="footer-tagline">Real songs, real progress — beginner guitar lessons in Riverton.</p>
+        </div>
+        <div class="footer-col">
+          <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="lessons.html">Lessons</a></li>
+            <li><a href="pricing.html">Pricing</a></li>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h2>Contact</h2>
+          <ul>
+            <li><a href="tel:+15551234567">(555) 123-4567</a></li>
+            <li><a href="mailto:hello@rivertonguitar.com">hello@rivertonguitar.com</a></li>
+            <li><a href="contact.html">Book a free lesson →</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="footer-copy">© 2025 Riverton Guitar Studio. Made with ♪ in Riverton.</p>
+    </div>
+  </footer>
+
+  <script src="js/nav.js" defer></script>
+</body>
+</html>

@@ -952,6 +952,24 @@ a:hover { text-decoration: underline; }
   border-top: 1px solid var(--border);
 }
 
+/* form validation */
+.form-input.invalid,
+.form-select.invalid {
+  border-color: #c0392b;
+}
+
+.form-input.invalid:focus,
+.form-select.invalid:focus {
+  outline-color: #c0392b;
+}
+
+.field-error {
+  display: block;
+  font-size: 0.825rem;
+  color: #c0392b;
+  margin-top: 0.3rem;
+}
+
 /* mobile reflow */
 @media (max-width: 899px) {
   .hero { padding: 3rem 0; }
@@ -978,4 +996,8 @@ a:hover { text-decoration: underline; }
     grid-template-columns: 1fr;
     gap: 2.5rem;
   }
+
+  .page-hero h1 { max-width: none; }
+
+  .stats-row { gap: 1.5rem; }
 }
